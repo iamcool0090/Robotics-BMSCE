@@ -57,13 +57,25 @@
                   <h3>Projects</h3>
                   <p>View the projects of BMSCE ROBOTICS CLUB</p>
                 </a>
-                <a href="#0">
+                <script>
+                    function func() {
+                      var elements = document.getElementsByTagName('span');
+                      for (var i = 0; i < elements.length; i++) {
+                        if (elements[i].innerHTML.includes("Works")) {
+                          elements[i].click();
+                        }
+                      }
+                    }
+
+                </script>
+                <a href="#0" id="idk_bruh" onclick=func()>
                   <h3>Sub-Divisions</h3>
                   <p>View the 3 different Sub-Divisions in the Club</p>
                 </a>
-                <a href="#0">
-                  <h3>About and Contact</h3>
-                  <p>Got any questions? Reach out to us here </p>
+                <a href="https://www.flickr.com/photos/198088163@N05/">
+                  <h3>View Gallery</h3>
+                  <p>See the photo gallery at BMSCE Robotics Club</p>
+                
                 </a>
               </div>
             </div>
@@ -163,16 +175,24 @@
                     </td>
                 
                     <td style="width: 33.33%; text-align: left;">
-                      <a href="#0">
-                        <h3 style="word-wrap: break-word;">Gallery</h3>
-                        <p style="word-wrap: break-word;">No Photos Uploaded yet</p>
-                      </a>
+                      <h3 style="word-wrap: break-word;">Upcoming Events</h3>
+                      <p style="word-wrap: break-word;">
+                        No upcoming events right now!
+                        
+                      </p>
+
+
                     </td>
+                    
                   </tr>
                 </table>
+
+                <style>
+                  .diff:hover{
+                    cursor: pointer;
+                  }
+                  </style>
                 
-
-
 
               </div>
             </div>
